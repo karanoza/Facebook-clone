@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { LoginComponent } from "./components/login/login.component";
 import { FacebookGuard } from "./guards/facebook.guard";
 import { HomeComponent } from "./components/home/home.component";
+import { RegisterComponent } from "./components/register/register.component";
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
     component: HomeComponent,
     canActivate: [FacebookGuard],
   },
-  { path: "login", component: LoginComponent },
+  { path: "login", component: RegisterComponent },
 ];
 
 @NgModule({
