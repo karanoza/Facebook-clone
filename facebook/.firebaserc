@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "facebook-39c07": {
+      "hosting": {
+        "facebook": [
+          "facebook-39c07"
+        ]
+      }
+    }
+  }
+}
