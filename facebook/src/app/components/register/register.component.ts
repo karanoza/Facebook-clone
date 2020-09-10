@@ -9,3 +9,5 @@ export class RegisterComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<RegisterComponent>) {}
   ngOnInit(): void {}
 }
+
+// sign up dialog box reference = dialogref

@@ -21,10 +21,11 @@ export class PostService {
     this.afAuth.authState.subscribe((user) => (this.currentUser = user));
   }
 
+  // get all post from firebase
   getAllPosts(): Observable<any> {
     return this.afs
       .collection<any>("posts", (ref) => ref.orderBy("time", "desc"))
-      .snapshotChanges()
+      .snapshotChanges() //get current user id then snapshot if wants full data then valuechanges
       .pipe(
         map((actions) => {
           return actions.map((item) => {
@@ -37,6 +38,7 @@ export class PostService {
       );
   }
 
+  // post the status
   postMessage(message: string, ownerName: string, otherItem): void {
     this.afs
       .collection("posts")
@@ -44,7 +46,7 @@ export class PostService {
         message,
         title: ownerName,
         user_id: this.currentUser.uid,
-        time: firebase.firestore.FieldValue.serverTimestamp(),
+        time: firebase.firestore.FieldValue.serverTimestamp(), //get current time from server
         ...otherItem,
       })
       .then((res) => console.log(res));

@@ -17,6 +17,7 @@ export class AuthService {
   private currentUser: UserData;
   private currentUser$ = new BehaviorSubject<UserData>(null);
 
+  // get & subscribe user data from fire
   constructor(
     private afAuth: AngularFireAuth,
     private router: Router,
@@ -42,6 +43,7 @@ export class AuthService {
     return this.currentUser$.asObservable();
   }
 
+  // Sign up and store data in firebase collection
   SignUp(
     email: string,
     password: string,
@@ -82,10 +84,12 @@ export class AuthService {
       .catch((err) => console.log(`Something went wrong ${err.message}`));
   }
 
+  // get userdata
   get userData(): Observable<firebase.User> {
     return this._userData;
   }
 
+  // Sign in method & collection from firebase
   SignIn(email: string, password: string): void {
     console.log(email, password);
 
@@ -109,6 +113,7 @@ export class AuthService {
       .catch((err) => console.log(err.message));
   }
 
+  // logout method
   Logout(): void {
     this.afAuth.signOut().then((res) => {
       console.log(res);
@@ -118,6 +123,7 @@ export class AuthService {
     });
   }
 
+  // search user
   searchUserInDatabase(user_id: string): Observable<UserData> {
     return this.afs
       .collection<UserData>("users")
@@ -126,6 +132,7 @@ export class AuthService {
   }
 }
 
+// Userdata model
 export interface UserData {
   firstName: string;
   lastName: string;

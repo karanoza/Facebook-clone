@@ -1,4 +1,5 @@
 <div class="home-container">
+  <!-- Header Section and Icons -->
   <div class="home__header">
     <div class="home__header__left">
       <img mat-card-avatar src="assets/fb-head.jpg" />
@@ -28,13 +29,14 @@
     </div>
     <div class="home__header__right">
       <div>
-        <img alt="" mat-card-avatar [src]="user?.avatar" />
+        <img alt="avatar" mat-card-avatar [src]="user?.avatar" />
         <span class="name">{{ user?.firstName || "Karan" }}</span>
       </div>
       <div>
         <mat-icon>add</mat-icon>
       </div>
 
+      <!-- Message icon -->
       <div>
         <mat-icon
           matBadge="4"
@@ -46,28 +48,31 @@
         </mat-icon>
       </div>
 
+      <!-- notifications icon -->
       <div>
         <mat-icon matBadge="3" matBadgeColor="warn" matBadgeOverlap="false"
           >notifications
         </mat-icon>
       </div>
 
+      <!-- Logout button -->
       <div>
         <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
         <mat-menu #menu="matMenu">
           <button mat-menu-item (click)="logout()">
-            <mat-icon>exit_to_app</mat-icon> Logout
+            <mat-icon (click)="logout()">exit_to_app</mat-icon> Logout
           </button>
         </mat-menu>
       </div>
     </div>
   </div>
 
+  <!-- Left Sidebar -->
   <div class="home__body">
     <div class="home__body__sidebarLeft">
       <div class="inside">
         <div class="user-avatar">
-          <img alt="" mat-card-avatar src="{{ user?.avatar }}" />
+          <img alt="avatar" mat-card-avatar src="{{ user?.avatar }}" />
           <span class="name"
             >{{ user?.firstName || "Karan" }} {{ user?.lastName }}</span
           >
@@ -111,7 +116,7 @@
 
     <div class="home__body__contentMiddle">
       <div class="home__body__contentMiddle__top">
-        <!--IMAGE CARDS-->
+        <!--IMAGE STORY CARDS-->
         <mat-card *ngFor="let i of images" class="image-card">
           <img alt="bg" class="bg" src="{{ i }}" />
           <mat-card-content>
@@ -127,13 +132,18 @@
         </mat-card>
       </div>
 
+      <!-- Whats on your mind / middle section -->
       <div class="home__body__contentMiddle__center">
         <mat-card class="post-message">
           <mat-card-header
             class="post-message-header"
             style="padding-bottom: 20px; border-bottom: 1px solid lightgray"
           >
-            <img alt="" mat-card-avatar [src]="user?.avatar" />
+            <img
+              alt="{{ user?.firstName }}"
+              mat-card-avatar
+              [src]="user?.avatar"
+            />
             <form #form="ngForm" (ngSubmit)="postMessage(form)">
               <input
                 class="on-your-mind"
@@ -168,7 +178,7 @@
           <mat-card-header class="posts__header">
             <img alt="{{ p?.title }}" mat-card-avatar [src]="p?.avatar" />
             <div class="posts__header__right">
-              <span>{{ p?.time?.seconds * 1000 | date: "shortTime" }}</span>
+              <span>{{ p?.time?.seconds * 1000 | date: "medium" }}</span>
               <h3>{{ p?.title }}</h3>
             </div>
           </mat-card-header>
@@ -179,6 +189,7 @@
       </div>
     </div>
 
+    <!-- Right side bar -->
     <div class="home__body__feedRight">
       <div class="inside">
         <img alt="feed" src="../../../assets/Myfeed.png" />
