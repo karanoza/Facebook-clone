@@ -13,7 +13,7 @@ const routes: Routes = [
     component: HomeComponent,
     canActivate: [FacebookGuard],
   },
-  { path: "login", component: RegisterComponent },
+  { path: "login", component: LoginComponent },
 ];
 
 @NgModule({

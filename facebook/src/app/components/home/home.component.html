@@ -28,8 +28,8 @@
     </div>
     <div class="home__header__right">
       <div>
-        <img alt="" mat-card-avatar [src]="user?.avatar" />
-        <span class="name">{{ user?.firstName || "Indranil" }}</span>
+        <img alt="" mat-card-avatar [src]="" />
+        <span class="name"></span>
       </div>
       <div>
         <mat-icon>add</mat-icon>
@@ -67,10 +67,8 @@
     <div class="home__body__sidebarLeft">
       <div class="inside">
         <div class="user-avatar">
-          <img alt="" mat-card-avatar src="{{ user?.avatar }}" />
-          <span class="name"
-            >{{ user?.firstName || "Indranil" }} {{ user?.lastName }}</span
-          >
+          <img alt="" mat-card-avatar src="" />
+          <span class="name"></span>
         </div>
         <div>
           <mat-icon> local_hospital</mat-icon>
@@ -133,7 +131,7 @@
             class="post-message-header"
             style="padding-bottom: 20px; border-bottom: 1px solid lightgray"
           >
-            <img alt="" mat-card-avatar [src]="user?.avatar" />
+            <img alt="" mat-card-avatar [src]="" />
             <form #form="ngForm" (ngSubmit)="postMessage(form)">
               <input
                 class="on-your-mind"

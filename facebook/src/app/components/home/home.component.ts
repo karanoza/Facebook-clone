@@ -15,8 +15,14 @@ export class HomeComponent implements OnInit {
     "https://upload.wikimedia.org/wikipedia/commons/9/9a/Swepac_FB_465%2C_RV70%2C_with_passing_lorry.jpg",
   ];
 
-  postMessage(form: NgForm): void {}
+  postMessage(form: NgForm): void {
+    console.log(form.value);
+  }
   constructor() {}
 
   ngOnInit(): void {}
+
+  logout() {
+    console.log("logout");
+  }
 }
