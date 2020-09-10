@@ -23,7 +23,17 @@ export class HomeComponent implements OnInit, OnDestroy {
   user: UserData;
 
   postMessage(form: NgForm): void {
-    console.log(form.value);
+    const { message } = form.value;
+    this.postService.postMessage(
+      message,
+      `${this.user.firstName} ${this.user.lastName}`,
+      {
+        avatar: this.user.avatar,
+        lastName: this.user.lastName,
+        firstname: this.user.firstName,
+      }
+    );
+    form.resetForm();
   }
   constructor(
     private postService: PostService,
@@ -45,8 +55,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     );
   }
 
-  logout() {
-    console.log("logout");
+  logout(): void {
+    this.authService.Logout();
   }
 
   ngOnDestroy(): void {
