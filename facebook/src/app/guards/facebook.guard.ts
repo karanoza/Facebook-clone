@@ -1,15 +1,16 @@
-import { AuthService } from "./../services/auth.service";
-import { Router } from "@angular/router";
 import { Injectable } from "@angular/core";
 import {
-  CanActivate,
   ActivatedRouteSnapshot,
+  CanActivate,
+  Router,
   RouterStateSnapshot,
   UrlTree,
 } from "@angular/router";
 import { Observable } from "rxjs";
-import { AngularFireAuth } from "@angular/fire/auth";
 import { map, tap } from "rxjs/operators";
+import { AngularFireAuth } from "@angular/fire/auth";
+import { AuthService } from "../services/auth.service";
+
 @Injectable({
   providedIn: "root",
 })
@@ -19,6 +20,7 @@ export class FacebookGuard implements CanActivate {
     private afAuth: AngularFireAuth,
     private authService: AuthService
   ) {}
+
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot

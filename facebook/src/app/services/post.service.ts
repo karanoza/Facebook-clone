@@ -5,6 +5,7 @@ import { AngularFireAuth } from "@angular/fire/auth";
 import { User } from "firebase";
 import { map } from "rxjs/operators";
 import * as firebase from "firebase";
+import { AuthService } from "./auth.service";
 
 @Injectable({
   providedIn: "root",
@@ -12,12 +13,15 @@ import * as firebase from "firebase";
 export class PostService {
   currentUser: User;
 
-  constructor(private afs: AngularFirestore, private afAuth: AngularFireAuth) {
+  constructor(
+    private afs: AngularFirestore,
+    private afAuth: AngularFireAuth,
+    private authService: AuthService
+  ) {
     this.afAuth.authState.subscribe((user) => (this.currentUser = user));
   }
 
-  //  get id of individual documents from firebase snapshot is used and for all data valuechanges is enough.
-  getAllPost(): Observable<any> {
+  getAllPosts(): Observable<any> {
     return this.afs
       .collection<any>("posts", (ref) => ref.orderBy("time", "desc"))
       .snapshotChanges()
@@ -40,10 +44,9 @@ export class PostService {
         message,
         title: ownerName,
         user_id: this.currentUser.uid,
-        time: firebase.firestore.FieldValue.serverTimestamp(), // automatically put server's current time stamp
+        time: firebase.firestore.FieldValue.serverTimestamp(),
         ...otherItem,
       })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+      .then((res) => console.log(res));
   }
 }

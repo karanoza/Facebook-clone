@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subs.push(
-      this.postService.getAllPost().subscribe((posts) => {
+      this.postService.getAllPosts().subscribe((posts) => {
         this.posts = posts;
       })
     );
