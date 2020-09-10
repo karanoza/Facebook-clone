@@ -1,0 +1,297 @@
+[debug] [2020-09-10T17:32:28.650Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:32:28.654Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-10T17:32:28.654Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:32:28.654Z] Platform:      win32
+[debug] [2020-09-10T17:32:28.654Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:32:28.656Z] Time:          Thu Sep 10 2020 23:02:28 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:32:28.656Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:32:28.656Z] 
+[debug] [2020-09-10T17:32:28.663Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:32:28.664Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Facebook-clone\facebook
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-09-10T17:32:38.502Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-10T17:32:38.502Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-10T17:32:38.831Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:32:38 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:32:38.838Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-09-10T17:32:39.615Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:32:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project facebook-39c07 (facebook) 
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-09-10T17:32:47.817Z] >>> HTTP REQUEST GET https://facebook-39c07.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-09-10T17:32:48.964Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:32:48 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:47:15.242Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:47:15.245Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:47:15.246Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:47:15.246Z] Platform:      win32
+[debug] [2020-09-10T17:47:15.246Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:47:15.247Z] Time:          Thu Sep 10 2020 23:17:15 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:47:15.247Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:47:15.248Z] 
+[debug] [2020-09-10T17:47:15.255Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:47:15.256Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:47:15.256Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:47:15.258Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:47:17.096Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:47:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1310","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:47:17.098Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:47:17.557Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:47:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:47:17.570Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:47:18.824Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:47:18 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:47:47.168Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:47:47.170Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:47:47.170Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:47:47.170Z] Platform:      win32
+[debug] [2020-09-10T17:47:47.170Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:47:47.171Z] Time:          Thu Sep 10 2020 23:17:47 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:47:47.171Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:47:47.172Z] 
+[debug] [2020-09-10T17:47:47.181Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:47:47.181Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:47:47.181Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:47:47.184Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:47:48.586Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:47:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1289","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:47:48.588Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:47:48.979Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:47:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:47:49.002Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:47:49.841Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:47:49 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:50:14.324Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:50:14.327Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:50:14.327Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:50:14.327Z] Platform:      win32
+[debug] [2020-09-10T17:50:14.328Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:50:14.329Z] Time:          Thu Sep 10 2020 23:20:14 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:50:14.329Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:50:14.329Z] 
+[debug] [2020-09-10T17:50:14.336Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:50:14.337Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:50:14.337Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:50:14.339Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:50:15.835Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:50:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1359","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:50:15.837Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:50:16.228Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:50:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:50:16.251Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:50:17.392Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:50:16 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:50:32.636Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:50:32.640Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:50:32.640Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:50:32.640Z] Platform:      win32
+[debug] [2020-09-10T17:50:32.640Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:50:32.641Z] Time:          Thu Sep 10 2020 23:20:32 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:50:32.642Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:50:32.642Z] 
+[debug] [2020-09-10T17:50:32.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:50:32.652Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:50:32.652Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:50:32.655Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:50:34.101Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:50:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1310","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:50:34.103Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:50:34.403Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:50:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:50:34.427Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:50:35.356Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:50:34 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:56:12.027Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:56:12.029Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:56:12.029Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:56:12.029Z] Platform:      win32
+[debug] [2020-09-10T17:56:12.029Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:56:12.030Z] Time:          Thu Sep 10 2020 23:26:12 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:56:12.030Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:56:12.030Z] 
+[debug] [2020-09-10T17:56:12.037Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:56:12.038Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:56:12.038Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:56:12.040Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:56:13.787Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:56:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1293","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:56:13.789Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:56:14.188Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:56:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:56:14.202Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:56:15.138Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:56:14 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:56:37.824Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:56:37.826Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:56:37.826Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:56:37.826Z] Platform:      win32
+[debug] [2020-09-10T17:56:37.826Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:56:37.827Z] Time:          Thu Sep 10 2020 23:26:37 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:56:37.827Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:56:37.827Z] 
+[debug] [2020-09-10T17:56:37.834Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:56:37.835Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:56:37.835Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:56:37.838Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:56:39.261Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:56:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1297","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:56:39.263Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:56:39.662Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:56:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:56:39.677Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:56:41.371Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:56:40 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T17:59:29.704Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:59:29.707Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T17:59:29.707Z] CLI Version:   8.10.0
+[debug] [2020-09-10T17:59:29.707Z] Platform:      win32
+[debug] [2020-09-10T17:59:29.707Z] Node Version:  v12.16.0
+[debug] [2020-09-10T17:59:29.709Z] Time:          Thu Sep 10 2020 23:29:29 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T17:59:29.709Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T17:59:29.709Z] 
+[debug] [2020-09-10T17:59:29.716Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T17:59:29.716Z] > authorizing via signed-in user
+[debug] [2020-09-10T17:59:29.717Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T17:59:29.719Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T17:59:31.610Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:59:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1351","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T17:59:31.613Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T17:59:32.321Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 17:59:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T17:59:32.334Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T17:59:33.168Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 17:59:32 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-10T18:02:00.611Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T18:02:00.614Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-10T18:02:00.615Z] CLI Version:   8.10.0
+[debug] [2020-09-10T18:02:00.615Z] Platform:      win32
+[debug] [2020-09-10T18:02:00.615Z] Node Version:  v12.16.0
+[debug] [2020-09-10T18:02:00.617Z] Time:          Thu Sep 10 2020 23:32:00 GMT+0530 (India Standard Time)
+[debug] [2020-09-10T18:02:00.617Z] ----------------------------------------------------------------------
+[debug] [2020-09-10T18:02:00.617Z] 
+[debug] [2020-09-10T18:02:00.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-10T18:02:00.625Z] > authorizing via signed-in user
+[debug] [2020-09-10T18:02:00.625Z] [iam] checking project facebook-39c07 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-10T18:02:00.628Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-39c07:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-10T18:02:02.051Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 18:02:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1302","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-10T18:02:02.053Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/facebook-39c07  
+ 
+[debug] [2020-09-10T18:02:02.455Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 10 Sep 2020 18:02:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'facebook-39c07'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-10T18:02:02.479Z] >>> HTTP REQUEST PUT https://facebook-39c07.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-09-10T18:02:03.605Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 10 Sep 2020 18:02:03 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
